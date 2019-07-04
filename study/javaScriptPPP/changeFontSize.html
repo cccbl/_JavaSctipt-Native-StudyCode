@@ -1,0 +1,31 @@
+<html>
+
+<body style="font-size: 12px">
+
+    <text>dsfbnlkjsadgjl;safdng;lsadnlk;</text>
+
+    <input id='aa' type="button" value="aa">
+    <input id='bb' type="button" value="bb">
+    <input id='cc' type="button" value="cc">
+</body>
+
+<script>
+    function chang(size) {
+        return function () {
+            document.body.style.fontSize = size + 'px';
+        }
+    }
+
+    var a = chang(11)
+    var a2 = chang(18);
+    var a3 = chang(25);
+
+    document.getElementById('aa').onclick = a;
+    document.getElementById('bb').onclick = a2;
+    document.getElementById('cc').onclick = a3;
+
+</script>
+
+
+
+</html>

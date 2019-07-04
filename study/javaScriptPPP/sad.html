@@ -1,0 +1,30 @@
+<<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>asdsad</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <form name="myForm">
+            <p><label>Form name:<input type="text" name="text1" value="Beluga"></label>
+            <p><input name="button1" type="button" value="Show Form Name"
+                 onclick="this.form.text1.value = this.form.name">
+            </p>
+            </form>
+    </body>
+
+    <script>
+        function validate(obj, low, hig) {
+            if ((obj.value > low) && (obj.value < hig)) {
+                alert('!!!!!!!!!')
+            }
+        }
+    </script>
+
+    </html>
