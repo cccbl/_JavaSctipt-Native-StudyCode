@@ -47,7 +47,26 @@ class Animal2 {
         this.energy -= amount;
     }
 }
-const test=new Animal2("叉烧包",10)
-test.play(9);
-test.sleep(5);
-console.log(test)
+// const test=new Animal2("叉烧包",10)
+// test.play(9);
+// test.sleep(5);
+// console.log(test)
+
+class Person extends Animal2 {
+    constructor(name, energy, money) {
+        super(name, energy);
+        this.money = money;
+    }
+    sayHi() {
+        return `Hi ${this.name}`
+    };
+    getMoney() {
+        return `you have ${this.money} dollar`
+    };
+
+}
+const personTest = new Person('纷纷', 1, 5);
+let t = personTest.getMoney();
+personTest.eat(99);
+console.log(personTest)
+console.log(t)

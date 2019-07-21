@@ -3,18 +3,18 @@
 
 //***************************************** */
 // 普通的add函数
-// function add(x, y) {
-//     return x + y
-// }
+function makeAdd(x, y) {
+    return x + y
+}
 //柯里化
-// function makeAdder(x) {
-//     return function(y) {
-//       return x + y;
-//     };
-//   }
-//   var add1 = makeAdder(5);
-//   console.log(add1.toString())
-//   console.log(add1(10));  // 15
+function makeAdder(x) {
+    return function (y) {
+        return x + y;
+    };
+}
+var add1 = makeAdder(5);
+console.log(add1.toString())
+console.log(add1(10));  // 15
 
 /****************************************** */
 
