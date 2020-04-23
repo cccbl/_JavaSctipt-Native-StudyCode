@@ -17,7 +17,7 @@ let testNum = 2;
 numAdd(2); // testNum依旧是2
 
 
-// 符合类型值，会被函数改动
+// 复合类型值，会被函数改动
 function arrAdd(arr) {
     arr.push("xxx");    // -
     // arr = [4, 5, 6]; // -重新赋值，但是对象的引用并没有改变，所以此句无效
